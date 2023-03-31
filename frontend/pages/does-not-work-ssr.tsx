@@ -10,8 +10,15 @@ export default function Home(props) {
 export const getServerSideProps = async ({ req }) => {
   const SSR = withSSRContext({ req });
 
+  const myInit = {
+    headers: {
+      Authorization: `Bearer ${(await SSR.Auth.currentSession())
+        .getIdToken()
+        .getJwtToken()}`,
+    },
+  };
   // This does not work, it returns no current user
-  const payload = await SSR.API.get("API", "hello", {});
+  const payload = await SSR.API.get("API", "hello", myInit);
 
   return {
     props: { message: payload.message },

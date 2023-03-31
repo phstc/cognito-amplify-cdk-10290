@@ -10,7 +10,16 @@ export default function Home() {
         <a href="/does-not-work-ssr">Does not work SSR</a>
       </li>
       <li>
-        <a href="/" onClick={() => Auth.signOut()}>
+        <a href="/no-ssr">No SSR</a>
+      </li>
+      <li>
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            Auth.signOut();
+          }}
+        >
           Sign out
         </a>
       </li>

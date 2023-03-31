@@ -39,18 +39,18 @@ const amplifyConfig = {
       {
         name: "API",
         endpoint: process.env.NEXT_PUBLIC_ENDPOINT,
-        custom_header: async () => {
-          // return { Authorization: "token" };
-          // Alternatively, with Cognito User Pools use this:
-          // return { Authorization: `Bearer ${(await Auth.currentSession()).getAccessToken().getJwtToken()}` }
-          const header = {
-            Authorization: `Bearer ${(await Auth.currentSession())
-              .getIdToken()
-              .getJwtToken()}`,
-          };
+        // custom_header: async () => {
+        //   // return { Authorization: "token" };
+        //   // Alternatively, with Cognito User Pools use this:
+        //   // return { Authorization: `Bearer ${(await Auth.currentSession()).getAccessToken().getJwtToken()}` }
+        //   const header = {
+        //     Authorization: `Bearer ${(await Auth.currentSession())
+        //       .getIdToken()
+        //       .getJwtToken()}`,
+        //   };
 
-          return header
-        },
+        //   return header
+        // },
       },
     ],
   },
