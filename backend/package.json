@@ -30,7 +30,7 @@
     "@aws-sdk/client-s3": "^3.276.0",
     "@aws-sdk/client-sqs": "^3.245.0",
     "aws-cdk-lib": "2.59.0",
-    "aws-sdk": "^2.1286.0",
+    "aws-sdk": "^2.1354.0",
     "constructs": "^10.0.0",
     "cron-parser": "^4.7.1",
     "node-fetch": "^2.6.9",
