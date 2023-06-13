@@ -26,9 +26,9 @@
   },
   "dependencies": {
     "@aws-cdk/aws-amplify-alpha": "^2.59.0-alpha.0",
-    "@aws-sdk/client-lambda": "^3.254.0",
-    "@aws-sdk/client-s3": "^3.276.0",
-    "@aws-sdk/client-sqs": "^3.245.0",
+    "@aws-sdk/client-lambda": "^3.350.0",
+    "@aws-sdk/client-s3": "^3.350.0",
+    "@aws-sdk/client-sqs": "^3.350.0",
     "aws-cdk-lib": "2.59.0",
     "aws-sdk": "^2.1286.0",
     "constructs": "^10.0.0",
